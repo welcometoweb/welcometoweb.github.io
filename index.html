@@ -33,6 +33,19 @@
 <footer>
 	<img src="http://www.intro-webdesign.com/images/newlogo.png" alt="logo" width="10%">  This page was created by Himanshu Bhargav & Colleen van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com">Intro to Web Design</a>
 </footer>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "d23651b9-48e1-4553-87f4-ad0eceab148b", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "9278384e-77d9-4d2a-abc0-3dc11c115d77", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 
 </body>
 </html>
